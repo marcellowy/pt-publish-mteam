@@ -9,7 +9,6 @@
 #pragma once
 
 #include <string>
-#include <curl/curl.h>
 #include <unordered_map>
 #include <memory>
 

@@ -12,6 +12,7 @@
 #include <sstream>
 #include "av_string.h"
 #include "av_http.h"
+#include <curl/curl.h>
 
 static size_t writeFunctionCallback(void* contents, const size_t size, size_t nmemb, void* userp);
 static size_t headerFunctionCallback(char* buffer, const size_t size, size_t nitems, void* userdata);
