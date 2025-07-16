@@ -1,0 +1,82 @@
+[2025-07-16 16:35:09.548] [info] [15188:20188] [main.cpp main:39] PT PUBLISH TOOLS start
+[2025-07-16 16:35:12.921] [info] [15212:13584] [main.cpp main:39] PT PUBLISH TOOLS start
+[2025-07-16 16:35:23.383] [info] [26280:30492] [main.cpp main:82] PT PUBLISH TOOLS start
+[2025-07-16 16:35:23.383] [warning] [26280:30492] [main.cpp parseCommand:35] --english-name empty
+[2025-07-16 16:35:28.575] [info] [4868:11952] [main.cpp main:82] PT PUBLISH TOOLS start
+[2025-07-16 16:35:28.575] [warning] [4868:11952] [main.cpp parseCommand:35] --english-name empty
+[2025-07-16 16:43:40.236] [info] [17988:33628] [main.cpp main:115] PT PUBLISH TOOLS start
+[2025-07-16 16:43:40.236] [warning] [17988:33628] [main.cpp parseCommand:35] --english-name empty
+[2025-07-16 16:44:23.638] [info] [25484:4124] [main.cpp main:115] PT PUBLISH TOOLS start
+[2025-07-16 16:44:23.638] [warning] [25484:4124] [main.cpp parseCommand:35] --english-name empty
+[2025-07-16 16:44:25.378] [info] [3348:31900] [main.cpp main:115] PT PUBLISH TOOLS start
+[2025-07-16 16:50:22.464] [info] [21208:9612] [main.cpp main:120] PT PUBLISH TOOLS start
+[2025-07-16 16:50:22.464] [warning] [21208:9612] [main.cpp parseCommand:39] -f,--file empty
+[2025-07-16 16:55:28.856] [info] [11892:20980] [main.cpp main:116] PT PUBLISH TOOLS start
+[2025-07-16 16:55:28.856] [warning] [11892:20980] [main.cpp parseCommand:39] -f,--file empty
+[2025-07-16 16:55:43.065] [info] [23156:23888] [main.cpp main:116] PT PUBLISH TOOLS start
+[2025-07-16 16:55:43.065] [warning] [23156:23888] [main.cpp parseCommand:86] aaa not exists
+[2025-07-16 16:56:49.395] [info] [30092:25472] [main.cpp main:116] PT PUBLISH TOOLS start
+[2025-07-16 16:56:49.397] [warning] [30092:25472] [main.cpp parseCommand:43] -f,--file publish-mteam.pdb not exists
+[2025-07-16 16:57:50.595] [info] [29944:11204] [main.cpp main:116] PT PUBLISH TOOLS start
+[2025-07-16 16:57:50.596] [warning] [29944:11204] [main.cpp parseCommand:43] -f,--file test.torrent not exists
+[2025-07-16 16:58:20.516] [info] [12844:22148] [main.cpp main:116] PT PUBLISH TOOLS start
+[2025-07-16 16:58:20.518] [info] [12844:22148] [main.cpp parseCommand:91] Torrent File: test.torrent
+English Name: aa
+Subtitle: aa
+Category ID: 1
+DouBan ID: aa
+Season: bb
+Source ID: 1
+Team ID: 1
+Title Prefix: titleprefix
+Screenshot: publish-mteam.pdb,publish-mteam.pdb,publish-mteam.pdb,
+
+[2025-07-16 16:58:53.333] [info] [7412:5964] [main.cpp main:118] PT PUBLISH TOOLS start
+[2025-07-16 16:58:53.334] [info] [7412:5964] [main.cpp parseCommand:91] Torrent File: test.torrent
+English Name: aa
+Subtitle: aa
+Category ID: 1
+DouBan ID: aa
+Season: bb
+Source ID: 1
+Team ID: 1
+Team Name: teamName
+Title Prefix: titleprefix
+Screenshot: publish-mteam.pdb,publish-mteam.pdb,publish-mteam.pdb,
+
+[2025-07-16 17:00:00.010] [info] [32304:32820] [main.cpp main:126] PT PUBLISH TOOLS start
+[2025-07-16 17:00:00.011] [warning] [32304:32820] [main.cpp parseCommand:73] --source-name empty
+[2025-07-16 17:00:04.187] [info] [5044:31720] [main.cpp main:126] PT PUBLISH TOOLS start
+[2025-07-16 17:00:04.187] [warning] [5044:31720] [main.cpp parseCommand:73] --source-name empty
+[2025-07-16 17:13:28.713] [info] [31980:7468] [main.cpp main:148] PT PUBLISH TOOLS start
+[2025-07-16 17:13:28.714] [info] [31980:7468] [main.cpp parseCommand:114] Torrent File: test.torrent
+English Name: aa
+Subtitle: aa
+Category ID: 1
+DouBan ID: aa
+Season: bb
+Season Name: 1
+Source ID: 
+Team ID: 1
+Team Name: teamName
+Title Prefix: titleprefix
+Screenshot: publish-mteam.pdb,publish-mteam.pdb,publish-mteam.pdb,
+
+[2025-07-16 17:13:57.062] [info] [5056:31280] [main.cpp main:148] PT PUBLISH TOOLS start
+[2025-07-16 17:13:57.062] [info] [5056:31280] [main.cpp parseCommand:114] Torrent File: test.torrent
+English Name: aa
+Subtitle: aa
+Category ID: 1
+DouBan ID: aa
+Season: bb
+Season Name: 1
+Source ID: 
+Team ID: 1
+Team Name: teamName
+Title Prefix: titleprefix
+Screenshot: publish-mteam.pdb,publish-mteam.pdb,publish-mteam.pdb,
+
+[2025-07-16 17:13:57.063] [info] [5056:31280] [main.cpp parseCommand:140] a=a  b c 
+[2025-07-16 17:13:57.063] [info] [5056:31280] [main.cpp parseCommand:140] m=123 
+[2025-07-16 17:13:57.064] [info] [5056:31280] [main.cpp parseCommand:140] m=ddd 
+[2025-07-16 17:20:41.339] [info] [28684:20808] [main.cpp main:148] PT PUBLISH TOOLS start
