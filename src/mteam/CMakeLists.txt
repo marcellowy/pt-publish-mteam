@@ -12,8 +12,6 @@ add_executable(${PROJECT_NAME} ${SOURCE_SRC})
 if (MSVC)
     set_property(TARGET ${PROJECT_NAME} PROPERTY
             MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
-    set_property(TARGET ${SHARED_LIB} PROPERTY
-            MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 else ()
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -static -static-libgcc")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static -static-libgcc -static-libstdc++")
@@ -42,6 +40,5 @@ set_target_properties(${PROJECT_NAME}
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
-        JsonCpp::JsonCpp
         CURL::libcurl
 )

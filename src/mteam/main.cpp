@@ -2,7 +2,7 @@
 #include <filesystem>
 #include "CLI11/CLI11.hpp"
 #include "logger.h"
-#include "http.h"
+#include "av_http.h"
 
 
 #define TOOLS_NAME "PT PUBLISH TOOLS"
@@ -161,7 +161,8 @@ int main(const int argc, char **argv){
     LOG_INFO("{} start", TOOLS_NAME);;
     try {
         const std::unique_ptr<av::http::Response> res = c.send(&req);
-        LOG_INFO("code: {}, statusCode: {}", res->code, res->statusCode);
+
+        LOG_INFO("http version: {}", res->body);
     } catch (std::exception &e) {
         LOG_ERROR("{}", e.what());
         return 0;

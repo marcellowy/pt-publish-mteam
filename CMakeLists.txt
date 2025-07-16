@@ -6,6 +6,4 @@ if (POLICY CMP0091)
     cmake_policy(SET CMP0091 NEW)
 endif (POLICY CMP0091)
 
-find_package(jsoncpp CONFIG REQUIRED)
-
 add_subdirectory(src)

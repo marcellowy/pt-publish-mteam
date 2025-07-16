@@ -47,8 +47,8 @@ namespace av::http {
     };
     class Response: public Base{
     public:
-        int code = 0; // curl error code
         int statusCode = 0; // http status code
+        std::string version; //  http version
     };
 
     class Client {
@@ -56,8 +56,6 @@ namespace av::http {
         Client();
         ~Client();
         std::unique_ptr<Response> send(const Request* request);
-    private:
-        static size_t writeCallback(void* contents, size_t size, size_t nmemb, void* userp);
     };
 }
 
