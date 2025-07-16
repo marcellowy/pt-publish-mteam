@@ -2,6 +2,8 @@
 #include <filesystem>
 #include "CLI11/CLI11.hpp"
 #include "logger.h"
+#include "http.h"
+
 
 #define TOOLS_NAME "PT PUBLISH TOOLS"
 
@@ -151,5 +153,19 @@ int main(const int argc, char **argv){
         std::cout << "parse command failed" << std::endl;
         return -1;
     }
+    // std::string body = av::http::Client::get("https://www.baidu.com");
+    // LOG_INFO("body: {}", body);
+    av::http::Client c;
+    av::http::Request req = {};
+    req.url = "https://www.baidu.com";
+    LOG_INFO("{} start", TOOLS_NAME);;
+    try {
+        const std::unique_ptr<av::http::Response> res = c.send(&req);
+        LOG_INFO("code: {}, statusCode: {}", res->code, res->statusCode);
+    } catch (std::exception &e) {
+        LOG_ERROR("{}", e.what());
+        return 0;
+    }
+
     std::cout << "success\n";
 }

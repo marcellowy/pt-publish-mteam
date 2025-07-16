@@ -1,10 +1,12 @@
 set(PROJECT_NAME publish-mteam)
 set(OUTPUT_DIR_NAME "${CMAKE_BINARY_DIR}/../bin")
 
-include_directories(${CMAKE_SOURCE_DIR}/3rdparty/include)
-include_directories("./")
+include_directories("./" ${CMAKE_SOURCE_DIR}/3rdparty/include ${CMAKE_SOURCE_DIR}/src/utils)
 
-file(GLOB SOURCE_SRC *.cpp)
+find_package(CURL REQUIRED)
+find_package(OpenSSL REQUIRED)
+
+file(GLOB SOURCE_SRC *.cpp ${CMAKE_SOURCE_DIR}/src/utils/*.cpp)
 add_executable(${PROJECT_NAME} ${SOURCE_SRC})
 
 if (MSVC)
@@ -41,4 +43,5 @@ set_target_properties(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         JsonCpp::JsonCpp
+        CURL::libcurl
 )
