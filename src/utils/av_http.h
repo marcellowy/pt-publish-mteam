@@ -5,9 +5,6 @@
 #ifndef HTTP_H
 #define HTTP_H
 
-// HttpClient.h
-#pragma once
-
 #include <string>
 #include <unordered_map>
 #include <memory>
@@ -43,6 +40,8 @@ namespace av::http {
         Method method = Method::Get;
         Proxy* proxy = nullptr;
         Timeout* timeout = nullptr;
+        void addFile();
+        void addHeader(std::string key, std::string value);
     };
     class Response: public Base{
     public:
